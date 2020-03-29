@@ -3,115 +3,38 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<style type="text/css">
-			body{
-				margin: 0;
-				padding: 0;
-				background-color: #0c002b;
-				font-family: sans-serif;
-			}
-			a{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);/* 让按钮居中 */
-				color: #1670f0;
-				padding: 30px 60px;
-				font-size: 30px;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				text-decoration: none;
-				box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-				overflow: hidden;
-			}
-			a::before{
-				content: '';
-				position: absolute;
-				top: 2px;
-				left: 2px;
-				bottom: 2px;
-				width: 50%;
-				background-color: rgba(255,255,255,0.05);
-			}
-			a span:nth-child(1){
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 2px;
-				background: linear-gradient(to right,#0c002b,#1779ff);
-				animation: animate1 2s linear infinite;
-				animation-delay: 1s;
-			}
-			@keyframes animate1{
-				0%{
-					transform: translateX(-100%);
-				}
-				100%{
-					transform: translateX(100%);
-				}
-			}
-			a span:nth-child(2){
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 2px;
-				height: 100%;
-				background: linear-gradient(to bottom,#0c002b,#1779ff);
-				animation: animate2 2s linear infinite;
-			}
-			@keyframes animate2{
-				0%{
-					transform: translateY(-100%);
-				}
-				100%{
-					transform: translateY(100%);
-				}
-			}
-			a span:nth-child(3){
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 2px;
-				background: linear-gradient(to left,#0c002b,#1779ff);
-				animation: animate3 2s linear infinite;
-				animation-delay: 1s;
-			}
-			@keyframes animate3{
-				0%{
-					transform: translateX(100%);
-				}
-				100%{
-					transform: translateX(-100%);
-				}
-			}
-			a span:nth-child(4){
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 2px;
-				height: 100%;
-				background: linear-gradient(to top,#0c002b,#1779ff);
-				animation: animate4 2s linear infinite;
-			}
-			@keyframes animate4{
-				0%{
-					transform: translateY(100%);
-				}
-				100%{
-					transform: translateY(-100%);
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="src/style.css"/>
 	</head>
 	<body>
-		<a href="#">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			Button
-		</a>
+		<div id="app">
+			<div id="header">
+				<span>查询教室：敬亭</span>
+				<input type="text" class="" placeholder="411" />
+				<button type="button" class="btn">查询</button>
+			</div>
+			
+			<div id="welc">
+				恭喜你打开了新世界的大门！！
+			</div>
+			
+			<div id="desc">
+				<img src="src/NEWXlogo.png" id="NEWXlogo">
+				<p id="infoH">大学生网络文化工作室</p>
+				<p id="infoB">合肥工业大学宣城校区NEWX大学生网络文化工作室是一个集合网页设计、媒体平台管理、视频制作、摄影摄像、图文编辑的学生工作室，<!-- 
+				 -->旨在宣传优秀的校园文化，提高同学对多媒体技术的兴趣。欢迎各位对本工作室感兴趣的同学积极了解，踊跃报名。</p>
+			</div>
+			
+			<a href="http://mobile.newxstudio.com/?v=3" id="enter">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				了解更多
+			</a>
+		</div>
+		
+		
+		<script type="text/javascript" src="src/control.js"></script>
 	</body>
 </html>
